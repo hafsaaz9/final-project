@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>online_shoping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+#contact-details {
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-details .details {
+    width: 40%;
+}
+li: marker {
+    content:"fa-map-marker";
+}
+
+#contact-details .details span,
+#form-details from span {
+    font-size: 15px;
+}
+
+#contact-details .details h2,
+#form-details from h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#contact-details .details h3 {
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+#contact-details .details li {
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+
+#contact-details .details li i {
+    font: size 14px;
+    padding-right: 22px;
+}
+
+#contact-details .details li p {
+    margin: 0;
+    font-size: 14px;
+}
+
+#contact-details .map {
+    width: 40%;
+    height: 350px;
+}
+
+#contact-details .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#form-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 2px solid #e1e1e1;
+}
+
+#form-details form {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 2px solid #e1e1e1;
+}
+
+#form-details form textarea {
+    resize: none;
+}
+
+
+#form-details form button {
+    background-color: palevioletred;
+    color: #fff;
+}
+
+#form-details .people div {
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+#form-details .people div p {
+    margin: 0;
+    font: size 13px;
+    line-height: 25px;
+}
+
+#form-details .people div p span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+</style>
+
+<body>
+
+
+ <!--Navbar-->   
+    <section id="header">
+        <a href="#" class="logo">Labied<span>Shop</span>.</a>
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <li id="account"><a href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                        <a href="#" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
+            </div>
+    </section>
+
+
+ <!--Section 1-->   
+    <section id="page-header" class="about-header">
+        <h2>#let's_talk</h2>
+            <p>LEAVE A MESSAGE, We love to hear from you!</p>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+                <h2>Visit one of our agency loction or Contact us today</h2>
+                    <h3>Head Office</h3>
+                        <div>
+                            <li>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <p>Casablanca, Morocco</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope-o " aria-hidden="true"></i>
+                                    <p>Contact@example.com</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <p>+212 604-913945</p>
+                            </li>
+                            <li>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                    <p>Monday to Saturday 9.00am to 9.00pm</p>
+                            </li>
+                        </div>
+        </div>
+
+
+ <!--Section 2-->   
+    <section id="form-details">
+        <form action="">
+            <span>LEAVE A MESSAGE</span>
+                <h2>We love to hear from you</h2>
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Subject">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your MESSAGE"></textarea>
+                            <button class="normal">submit</button>
+        </form>
+    </section>
+ 
+
+ <!--Section 3-->
+    <section id="newletter" class="section-p1 section-m1">
+        <div class="newtext">
+            <h4>Sign Up For newletters</h4>
+                <p>Get E-mail update about our latest shop and <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+
+ <!--Footer-->   
+ <footer class="section-p1">
+    <div class="col">
+        <h4>Contact</h4>
+            <p><strong>Address:</strong> Sidi Maarouf, Casablanca, Morocco</p>
+            <p><strong>Phone:</strong> +212 604-913945</p>
+            <p><strong>Hours:</strong> 09:00 -21:00, Mon-Sat </p>
+                <div class="follow">
+                    <h4>follow us</h4>
+                        <div class="icon">
+                            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </div>
+                </div>
+    </div>
+
+        <div class="col">
+            <h4>About</h4>
+                <a href="#">About us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact us </a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My order</a>
+                <a href="#"> Help </a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                    <div class="row">
+                        <img src="pic3/app.jpg" alt="">
+                        <img src="pic3/play.jpg" alt="">
+                    </div>
+                        <p>Secured Payment Gateways</p>
+                            <img src="pic3/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>©2025, Labied -Ecommerce Marketplace </p>
+        </div>
+
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

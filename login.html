@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>online_shoping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    .account-page {
+    padding: 50px 0;
+    background: #e3e6f3;
+}
+
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 380px;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.form-container:hover {
+    box-shadow: 0 5px 15px #616464;
+}
+
+.form-container span {
+    font-weight: 680;
+    padding: 0 10px;
+    color: #524f4f;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 100px;
+    transition: transform 1s;
+
+}
+
+#LoginForm input {
+    padding: 7px 30px;
+    border-radius: 5px;
+    background-color: #c9cbce;
+    color: #000;
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+#RegForm input {
+    padding: 7px 30px;
+    border-radius: 5px;
+    background-color: #c9cbce;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h3 {
+    font-weight: 590;
+    color: palevioletred;
+}
+
+form .btn {
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #f2f6f6;
+    background-color: palevioletred;
+
+}
+
+form .btn:focus {
+    outline: none;
+
+}
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 10px;
+    text-decoration: none;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: palevioletred;
+    border-radius: 50px;
+    height: 4px;
+    margin-top: 7px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 25px;
+    }
+
+
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    }
+
+    #lg-bag {
+        display: none;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #products1 .pro-container {
+        justify-content: center;
+    }
+
+    #products1 .pro {
+        margin: 15px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    #banner3 {
+        padding: 0 40px;
+    }
+
+    #banner3 .banner-box {
+        min-width: 28%;
+    }
+
+    #newsletter .form {
+        width: 70%;
+    }
+
+    /*contact page*/
+
+    #form-details {
+        padding: 40px;
+    }
+
+    #form-details form {
+        width: 50%;
+
+    }
+
+}
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    #hero {
+        padding: 0 20px;
+        background-position: 53%;
+    }
+
+    #feature {
+        justify-content: space-between;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #products1 .pro {
+        width: 40%;
+        padding: 10px 12px;
+        margin: 15px;
+    }
+
+    #banner {
+        height: 30vh;
+    }
+
+    #banner h4 {
+        font: 1em;
+        font-weight: 480;
+    }
+
+    #banner h2 {
+        font-size: 25px;
+        font-weight: 480;
+    }
+
+    #banner button {
+        font-size: 14px;
+        padding: 8px 8px;
+    }
+
+    #sm-banner .banner-box {
+        height: 28vh;
+    }
+
+    #sm-banner .banner-box2 {
+        margin-top: 20px;
+    }
+
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box {
+        width: 33%
+    }
+
+
+    #newletter input {
+        height: 40px;
+        font-size: 14px;
+        width: 100%;
+        width: 700px;
+    }
+
+    #newletter button {
+        height: 40px;
+    }
+
+    footer .copyright {
+        text-align: start;
+    }
+
+    
+    #page-header {
+        height: 15vh;
+    }
+
+    #pagination a {
+        padding: 14px 17px;
+        border-radius: 40%;
+        font-weight: 600;
+    }
+
+
+    
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-image {
+        width: 90%;
+        margin-right: 0px;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+    }
+
+
+    
+
+    #blog {
+        padding: 100px 20px 0 20px;
+    }
+
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #blog .blog-img {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    #blog .blog-details {
+        width: 100%;
+
+    }
+
+    
+
+    #about-head {
+        flex-direction: column;
+    }
+
+    #about-head img {
+        width: 100%;
+        height: auto;
+    }
+
+    #about-head div {
+        padding-left: 0px;
+    }
+
+    #feature .fe-box {
+        width: 120px;
+    }
+
+    
+    #contact-details {
+        flex-direction: column;
+    }
+
+    #contact-details .details {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #contact-details .map {
+        width: 80%;
+    }
+
+    #form-details {
+        margin: 10px;
+        padding: 30px 10px;
+        flex-wrap: wrap;
+    }
+
+    #form-details form {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    
+    .form-container {
+        height: 360px;
+    }
+}
+</style>
+
+ <!--Navbar-->
+<body>
+    <section id="header">
+        <a href="#" class="logo">Labied<span>Shop</span>.</a>
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <li id="account"><a href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                        <a href="#" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+                </ul>
+            </div>
+            <div id="mobile">
+                <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                    <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
+            </div>
+    </section>
+
+
+
+ <!--Login in & Sign in-->
+    <section class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login in</span>
+                            <span onclick="register()">Sign Up</span>
+                            <hr id="Indicator">
+                        </div>
+ 
+                        <form id="LoginForm">
+                            <h3>Welcome Back!👋</h3>
+                            <br>
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="password">
+                            <br>
+                            <a href="">Forgot password?</a> <br>
+                            <button type="submit" class="btn">Login</button>
+                            <br>
+                            <a href=""><u>Don't have an account? Sign Up</u></a>
+                        </form>
+
+                        <form id="RegForm">
+                            <h3> Create new account</h3>
+                            <br>
+                            <input type="text" autocomplete="off" placeholder="Username">
+                            <input type="email" autocomplete="off" placeholder="Email">
+                            <input type="password" autocomplete="off" placeholder="password">
+                            <button type="submit" class="btn">Create Account</button>
+                            <br>
+                            <a href=""><u>Already have an account? Sign in</u></a>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+                <p><strong>Address:</strong> Sidi Maarouf, Casablanca, Morocco</p>
+                <p><strong>Phone:</strong> +212 604-913945</p>
+                <p><strong>Hours:</strong> 09:00 -21:00, Mon-Sat </p>
+                    <div class="follow">
+                        <h4>follow us</h4>
+                            <div class="icon">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                            </div>
+                    </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact us </a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My order</a>
+            <a href="#"> Help </a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>©2025, Labied -Ecommerce Marketplace </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translatex(0px)";
+            Indicator.style.transform = "translatex(100px)";
+        }
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translatex(300px)";
+            Indicator.style.transform = "translatex(0px)";
+        }
+
+
+    </script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
